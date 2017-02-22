@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:medium,bold&subset=Latin);
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Droid Sans";
+}
+body {background-color:rgb(245,245,245);}
+.blockquote {border-left: .25rem solid #0275d8;}
+.blockquote-reverse {    border-right: .25rem solid #0275d8;border-left: 0;}
+.card-moabist{margin-bottom:20px;}
+.card-moabist img{height:100%;width:100%;}
+.card-moabist:hover{border-color:rgb(245,245,245);border-width:5px;}
+.checkout-float{position:fixed;top:8px;z-index:999;right:28%;}
+h1{font-size: calc(.7em + 1vw);}
+h2{font-size: calc(.6em + 1vw);}
+h3{font-size: calc(.5em + 1vw);}
+h4{font-size: calc(.4em + 1vw);}
+h5{font-size: calc(.3em + 1vw);}
+h6{font-size: calc(.2em + 1vw);}
+.text-black{color: #292b2c;}
