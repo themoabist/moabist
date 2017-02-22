@@ -4,20 +4,21 @@
   <body style="min-height:500px;">
    {% include nav.html %}
    <div class="container">
-   <br><br><br><br><br>
+	<br><br><br><br><br>
     <h1 class="post-title">{{ post.title }}</h1>
     <article class="post-content">
       {{ content }}
     </article>
 	
-	<div class="row">
-	<div class="col-sm-4 float-right">
-	<a class="nav-link" href={{ site.baseurl }}{{ page.previous.url }}>Previous Post</a>
-	</div>
-	<div class="col-sm-4 float-right"></div>
-	<div class="col-sm-4 float-left">
-	<a class="nav-link" href={{ site.baseurl }}{{ page.next.url }}>Next Post</a>
-	</div>
+		<div class="row">
+			<div class="col-sm-4 float-right">
+			<a class="nav-link" href={{ site.baseurl }}{{ page.previous.url }}>Previous Post</a>
+			</div>
+			<div class="col-sm-4 float-right"></div>
+			<div class="col-sm-4 float-left">
+				<a class="nav-link" href={{ site.baseurl }}{{ page.next.url }}>Next Post</a>
+			</div>
+		</div>
    </div>
 
 	{% include footer.html %}
