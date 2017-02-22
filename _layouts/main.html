@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+ {% include header.html %}
+ <body>
+ {% include nav.html %}
+	<br><br>
+	 <div class="container">
+		  {% for post in site.posts %}	
+		   <div class="card">
+			<img class="card-img-top img-fluid" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }} image" style="height:200px;">
+			<div class="card-block">
+			  <h4 class="card-title">{{ post.title }}</h4>
+			  <div class="card-text">{{ post.excerpt }}</div>
+			  <a class="nav-link" href={{ site.baseurl }}{{ post.url }}>Read More</a>		
+			</div>
+		   </div>
+		   <br><br>
+		  {% endfor %}
+	 </div>
+	  {% include footer.html %}
+ </body>
+</html>

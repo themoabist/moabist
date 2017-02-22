@@ -1,0 +1,5 @@
+.container-fluid{padding-left:0px;padding-right:0px;}
+body {background-color:rgb(245,245,245);font-size: calc(.6em + .6vw);}
+.blockquote {border-left: .25rem solid #0275d8;}
+.blockquote-reverse {    border-right: .25rem solid #0275d8;border-left: 0;}
+
