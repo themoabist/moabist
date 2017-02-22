@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include header.html %}
-  <body>
+  <body style="min-height:500px;">
    {% include nav.html %}
    <div class="container">
+   <br><br><br>
     <h1 class="post-title">{{ post.title }}</h1>
     <article class="post-content">
       {{ content }}
@@ -12,6 +13,6 @@
 	<a class="nav-link" href={{ site.baseurl }}{{ page.previous.url }}>Previous Post</a><a class="nav-link" href={{ site.baseurl }}{{ page.next.url }}>Next Post</a>
    </div>
 
-	 {% include footer.html %}
+	{% include footer.html %}
  </body> 
 </html>
