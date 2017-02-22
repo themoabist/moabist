@@ -5,12 +5,12 @@
    {% include nav.html %}
    <div class="container">
 	<br><br><br><br><br>
-    <h1 class="post-title">{{ ../title }}</h1>
+    <h1 class="post-title">{{ page.title }}</h1>
 	
 		<div class="card">
-			<img class="card-img-top img-fluid" src="{{ site.baseurl }}{{ page.image }}" alt="{{ this.title }} image">
+			<img class="card-img-top img-fluid" src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }} image">
 			<div class="card-block">
-			  <h4 class="card-title">{{ title }}</h4>
+			  <h4 class="card-title">{{ page.title }}</h4>
 			  <div class="card-text"> {{ content }}</div>		
 			</div>
 		</div>
