@@ -10,7 +10,14 @@
       {{ content }}
     </article>
 	
-	<a class="nav-link" href={{ site.baseurl }}{{ page.previous.url }}>Previous Post</a><a class="nav-link" href={{ site.baseurl }}{{ page.next.url }}>Next Post</a>
+	<div class="row">
+	<div class="col-sm-4 float-right">
+	<a class="nav-link" href={{ site.baseurl }}{{ page.previous.url }}>Previous Post</a>
+	</div>
+	<div class="col-sm-4 float-right"></div>
+	<div class="col-sm-4 float-left">
+	<a class="nav-link" href={{ site.baseurl }}{{ page.next.url }}>Next Post</a>
+	</div>
    </div>
 
 	{% include footer.html %}
